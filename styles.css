@@ -37,18 +37,3 @@ span {
 .article-img {
   	scroll-snap-align: center;
 }
-
-
-.article-img:active {
-  	border: 1px solid white;
-  	scroll-snap-align: center !important;
-}
-
-.container:active > span > .article-img {
-	scroll-snap-align: none;
-}
-
-
-.article-img:hover {
-  cursor: pointer;
-}
