@@ -2,8 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-html {
-	height: 100%;
+
+#scroller {
+		height: 100%;
  position: absolute;
   resize: both;
   margin: 0 auto 30px;
