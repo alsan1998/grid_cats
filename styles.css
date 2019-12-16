@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+ position: absolute;
+  resize: both;
+  margin: 0 auto 30px;
+  overflow: scroll;
+  display:block;
+width: 100%;
+  scroll-snap-type: both mandatory;
+scroll-behavior: smooth;
+}
+
+.container {
+	width: 225%;
+	height: 225%;
+}
+
+span {
+  float: left;
+  display: inline-block;
+  width: 33%;
+  height: 33%;
+  margin: 1px;
+  border: 1px solid white;
+}
+
+.article-img {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.article-img {
+  	scroll-snap-align: center;
+}
+
+
+.article-img:active {
+  	border: 1px solid white;
+  	scroll-snap-align: center !important;
+}
+
+.container:active > span > .article-img {
+	scroll-snap-align: none;
+}
+
+
+.article-img:hover {
+  cursor: pointer;
+}
